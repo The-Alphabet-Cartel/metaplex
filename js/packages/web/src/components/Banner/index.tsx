@@ -6,6 +6,7 @@ export const Banner = (props: {
   useBannerBg: boolean;
   headingText: string;
   subHeadingText: string;
+  subHeadingText2: string;
   actionComponent?: JSX.Element;
   children?: React.ReactNode;
 }) => {
@@ -36,26 +37,31 @@ export const Banner = (props: {
       <div id="mobile-banner">
         <img className="banner-img" src={props.src} />
         <div className="banner-content">
-          <div id={'main-heading'}>{props.headingText}</div>
-          <div id={'sub-heading'}>{props.subHeadingText}</div>
+          <div id={'main-heading'}><img src="/TAC-logo.png" /></div>
+          <div id={'sub-heading'}>
+            {props.subHeadingText}
+            <br />
+            {props.subHeadingText2}
+          </div>
           {props.actionComponent}
         </div>
       </div>
-      <div
-        id={'current-banner'}
-        style={{ backgroundImage: `url(${props.src})` }}
-      >
+      <div id={'current-banner'} style={{ backgroundImage: `url(${props.src})` }}>
         <span id={'gradient-banner'}></span>
         <div id="banner-inner">
           <div id={'message-container'}>
-            <div id={'main-heading'}>{props.headingText}</div>
-            <div id={'sub-heading'}>{props.subHeadingText}</div>
+            <div id={'main-heading'}><img src="/TAC-logo.png" /></div>
+            <div id={'sub-heading'}>
+              {props.subHeadingText}
+              <br />
+              {props.subHeadingText2}
+            </div>
             {props.actionComponent}
           </div>
           {props.children}
           <div className="powered-by">
             <span>
-              POWERED BY <b>METAPLEX</b>
+              POWERED BY <img src="/icons/Hori_Stickers_Final-10.png" height="75" />
             </span>
           </div>
         </div>

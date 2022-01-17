@@ -21,6 +21,9 @@ export enum LiveAuctionViewState {
   Resale = '3',
 }
 
+var rand = Math.floor(Math.random() * 5) + 1;
+var bannerSrc = "/TAC-banner-"+rand+".png";
+
 export const SalesListView = () => {
   const [activeKey, setActiveKey] = useState(LiveAuctionViewState.All);
   const { isLoading } = useMeta();
@@ -30,9 +33,10 @@ export const SalesListView = () => {
   return (
     <>
       <Banner
-        src="/main-banner.svg"
-        headingText="The amazing world of Metaplex."
-        subHeadingText="Buy exclusive Metaplex NFTs."
+        src={bannerSrc}
+        headingText="The Alphabet cARTel"
+        subHeadingText="Secure your assets and sell your art safely."
+        subHeadingText2="You're protected by the family."
         actionComponent={<HowToBuyModal buttonClassName="secondary-btn" />}
         useBannerBg
       />
