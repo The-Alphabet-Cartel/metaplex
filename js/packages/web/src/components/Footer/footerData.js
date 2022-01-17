@@ -5,15 +5,17 @@ export const footerConf = {
     'Join our mailing list for updates about our artists and more.',
   components: [
     {
-      title: 'Company',
+      title: 'The Alphabet cARTel',
       links: [
         {
           label: 'About',
-          url: 'www.solana.com',
+          url: '/#/about',
+          target: '',
         },
         {
-          label: 'Terms of service',
-          url: 'www.solana.com',
+          label: 'Terms Of Service',
+          url: '/#/tos',
+          target: '',
         },
       ],
     },
@@ -21,20 +23,24 @@ export const footerConf = {
       title: 'Help',
       links: [
         {
-          label: 'FAQ',
-          url: 'www.solana.com',
+          label: 'Frequently Asked Questions',
+          url: '/#/faq',
+          target: '',
         },
         {
           label: 'Support',
-          url: 'www.solana.com',
+          url: '/#/support',
+          target: '',
         },
         {
-          label: 'Privacy policy',
-          url: 'www.solana.com',
+          label: 'Privacy Policy',
+          url: '/#/privacy',
+          target: '',
         },
         {
           label: 'Your purchases',
-          url: 'www.solana.com',
+          url: '',
+          target: '',
         },
       ],
     },
@@ -42,16 +48,14 @@ export const footerConf = {
       title: 'Follow us',
       links: [
         {
-          label: 'Instagram',
-          url: 'www.solana.com',
-        },
-        {
           label: 'Twitter',
-          url: 'www.solana.com',
+          url: 'https://twitter.com/AlphabetCartel',
+          target: '_blank',
         },
         {
           label: 'Discord',
-          url: 'www.solana.com',
+          url: 'http://discord.alphabetcartel.com',
+          target: '_blank',
         },
       ],
     },

@@ -8,3 +8,8 @@ export { AuctionCreateView } from './auctionCreate';
 export { ArtworksView } from './artworks';
 export { AnalyticsView } from './analytics';
 export { StaticPageView } from './staticPage';
+export { AboutUsView } from './aboutUs';
+export { TOSView } from './termsOfService';
+export { FAQView } from './faq';
+export { SupportView } from './support';
+export { PrivacyPolicyView } from './privacyPolicy';

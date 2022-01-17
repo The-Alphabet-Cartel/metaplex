@@ -94,9 +94,9 @@ export const Footer = () => {
         {footerConf.showShopName ? (
           <div className="footer-community">
             <div className="sub-header">
-              {LABELS.STORE_NAME} NFT Marketplace
+              {LABELS.STORE_NAME} - NFT Marketplace
             </div>
-            <div className="footer-link">Powered by Metaplex and Solana</div>
+            <div className="footer-link">Powered by <img src="/icons/Hori_Stickers_Final-10.png" height="75" /></div>
           </div>
         ) : null}
         {footerConf.components.map(component => (
@@ -104,13 +104,14 @@ export const Footer = () => {
             <div className="sub-header">{component.title}</div>
             {component.links.map(link => (
               <div className="body-text">
-                <a href={link.url} target="_blank" className="footer-link">
+                <a href={link.url} target={link.target} className="footer-link">
                   {link.label}
                 </a>
               </div>
             ))}
           </div>
         ))}
+        {/*
         {footerConf.showEmailSubscriber ? (
           <div className="footer-section-container subscriber-container">
             <div className="subscriber-text">
@@ -119,6 +120,7 @@ export const Footer = () => {
             <NewsLetterForm />
           </div>
         ) : null}
+        */}
       </div>
       <div className="footer-foot">
         <div className="small-body footer-link">
