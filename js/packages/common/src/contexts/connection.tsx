@@ -48,19 +48,19 @@ export const ENDPOINTS: Array<Endpoint> = [
   {
     name: 'mainnet-beta',
     label: 'mainnet-beta',
-    url: 'https://api.metaplex.solana.com/',
+    url: 'https://connect.runnode.com/?apikey=ju4em1kCk8DXqMtohy55',
     chainId: ChainId.MainnetBeta,
   },
   {
     name: 'testnet',
     label: 'testnet',
-    url: clusterApiUrl('testnet'),
+    url: 'https://connect.runnode.com/?apikey=ju4em1kCk8DXqMtohy55',
     chainId: ChainId.Testnet,
   },
   {
     name: 'devnet',
     label: 'devnet',
-    url: clusterApiUrl('devnet'),
+    url: 'https://connect.runnode.com/?apikey=ju4em1kCk8DXqMtohy55',
     chainId: ChainId.Devnet,
   },
 ];

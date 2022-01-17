@@ -1,0 +1,26 @@
+{
+  "name": "Vikingum #1",
+  "symbol": "VKNGM",
+  "description": "A.I. produced vikings for The Alphabet cARTel.",
+  "image": "0.png",
+  "attributes": null,
+  "properties": {
+    "files": [
+      {
+        "uri": "0.png",
+        "type": "image/png"
+      }
+    ],
+    "creators": [
+      {
+        "address": "BG843gdQfEm83KBwTWnx2bVGqWkhZg6TS8vdcvoJ7ZHZ",
+        "share": 100
+      }
+    ]
+  },
+  "collection": {
+    "name": "Vikingum",
+    "family": "The Alphabet cARTel"
+  },
+  "seller_fee_basis_points": 500
+}
