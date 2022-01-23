@@ -19,6 +19,7 @@ export enum LiveAuctionViewState {
   Participated = '1',
   Ended = '2',
   Resale = '3',
+  Own = '4',
 }
 
 var rand = Math.floor(Math.random() * 5) + 1;
@@ -67,6 +68,12 @@ export const SalesListView = () => {
                   <TabPane
                     tab="Participated"
                     key={LiveAuctionViewState.Participated}
+                  ></TabPane>
+                )}
+                {connected && (
+                  <TabPane
+                    tab="My Live Auctions"
+                    key={LiveAuctionViewState.Own}
                   ></TabPane>
                 )}
               </Tabs>
